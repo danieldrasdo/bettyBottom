@@ -1,0 +1,1311 @@
+b {
+  font-weight: 700;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.allCaps {
+  text-transform: uppercase;
+}
+
+.unhide {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: 0 !important;
+}
+
+.bullet {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: white;
+  margin: 0 0 4px;
+}
+
+.srOnly {
+  display: none;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: #d50023;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background: #d50023;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 290px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+          transition: color 0.2s;
+}
+
+body a:hover {
+  color: #d50023;
+}
+
+form {
+  margin: 84px 0 0;
+  width: 100%;
+  text-transform: none;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  display: block;
+  padding: 7px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 0;
+  font: 400 16px/22px "Lato", Arial, Helvetica, sans-serif;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin: 0 0 14px;
+  font-size: 14px;
+}
+
+form textarea {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding: 7px;
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid black;
+  font: 400 16px/22px "Lato", Arial, Helvetica, sans-serif;
+  -webkit-transition: height 0.2s ease-in-out;
+          transition: height 0.2s ease-in-out;
+}
+
+form button {
+  width: 100%;
+  outline: none;
+  display: block;
+  margin: 0;
+  padding: 7px 14px;
+  height: 60px;
+  box-sizing: border-box;
+  font: 900 18px/22px "Lato", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
+          transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
+}
+
+form button:hover {
+  color: white;
+  background-color: black;
+}
+
+form button:active {
+  border-width: 6px;
+  background-color: #1c531c;
+}
+
+form .input {
+  width: calc(50% - 7px);
+  float: left;
+  display: inline-block;
+  margin: 0 14px 14px 0;
+}
+
+form .input.email {
+  margin-right: 0;
+}
+
+form .textArea {
+  clear: both;
+  width: 100%;
+  display: block;
+  margin: 0 0 14px;
+}
+
+form #response.active {
+  background: white;
+  color: black;
+  padding: 14px;
+  border: 2px solid black;
+  margin: 0 0 14px;
+}
+
+form #response.active.error {
+  color: #ef0027;
+  border-color: #ef0027;
+  background-color: white;
+}
+
+form #response.active.success {
+  color: #448900;
+  border-color: #448900;
+  background-color: white;
+}
+
+header {
+  display: block;
+  margin: 0;
+  padding: 0 0 24px;
+  position: relative;
+  z-index: 15;
+  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  text-align: right;
+  padding: 14px 0;
+  margin: 0;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 4px 14px 4px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0 14px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 39px;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+
+header h1 b {
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+header h1 br {
+  display: none;
+}
+
+nav {
+  float: left;
+  width: 200px;
+  margin: 18px 14px 0;
+  padding: 207px 0 0;
+  font: 300 18px/24px "Lato", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  background: url("../img/betty-bottom-logo.png") no-repeat center top;
+  background-size: 200px;
+}
+
+nav.siteNavFixed {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  padding-top: 0;
+  -webkit-transition: all 200ms;
+          transition: all 200ms;
+  background: none;
+  background-color: white;
+  top: -300px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  margin: 14px 0;
+}
+
+nav ul li a.active {
+  color: #d50023;
+  border-right: 5px solid #d50023;
+}
+
+div.main {
+  float: right;
+  width: calc(100% - 229px);
+  padding: 0;
+  box-shadow: inset 5px 0px 14px -5px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+div.main a {
+  color: #d50023;
+  -webkit-transition: border 100ms 150ms;
+          transition: border 100ms 150ms;
+}
+
+div.main a:hover {
+  border-bottom: 3px solid #d50023;
+}
+
+div.main section {
+  margin: 0;
+  padding: 104px 0;
+  display: block;
+  position: relative;
+  box-shadow: inset 5px 0px 14px -5px rgba(0, 0, 0, 0.05);
+}
+
+div.main section:last-child {
+  margin-bottom: 0;
+}
+
+div.main section h2 {
+  margin: 0 0 14px;
+  padding: 24px;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+div.main section h3 {
+  margin: 0 0 14px;
+  padding: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font: 700 20px/28px "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+div.main section p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+div.main #home {
+  min-height: 560px;
+  background: url(../img/store-front-1.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: block;
+}
+
+div.main #home p {
+  position: absolute;
+  display: block;
+  padding: 44px 14%;
+  bottom: 0;
+  color: white;
+  background-color: rgba(137, 0, 22, 0.6);
+  border-top: 2px solid rgba(137, 0, 22, 0.8);
+  text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 44px;
+}
+
+div.main #about-us {
+  padding: 104px 0 0;
+}
+
+div.main #about-us h2 {
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 64px;
+}
+
+div.main #about-us h2.meet {
+  width: 344px;
+  margin: -40px auto 0;
+  padding: 14px;
+  z-index: 1;
+  display: block;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+div.main #about-us h2.meet b {
+  display: inline;
+}
+
+div.main #about-us h2 b {
+  display: none;
+}
+
+div.main #about-us h2 .logo {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin-top: -20px;
+  vertical-align: top;
+  background: url("../img/betty-bottom-logo.png") no-repeat center center;
+  background-size: 100%;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+div.main #about-us h2 i {
+  font-style: normal;
+  font-size: 120px;
+  display: inline-block;
+  margin-top: -14px;
+  font-weight: 900;
+  vertical-align: top;
+  padding-left: 14px;
+  font-family: 'Times', Times New Roman, serif;
+  -webkit-transform: translateY(14px) rotate(5deg);
+      -ms-transform: translateY(14px) rotate(5deg);
+          transform: translateY(14px) rotate(5deg);
+}
+
+div.main #about-us .timeline {
+  width: 100%;
+  padding: 0 14% 44px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+div.main #about-us .timeline #verticalLine {
+  position: absolute;
+  width: 50%;
+  left: -1px;
+  border-right: 2px solid black;
+  height: 100%;
+}
+
+div.main #about-us .timeline .timelineDate {
+  width: 72px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 auto;
+  padding: 24px 0;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+div.main #about-us .timeline .events .event {
+  position: relative;
+  z-index: 2;
+  margin-left: 54%;
+  margin-top: -100px;
+  padding: 24px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+div.main #about-us .timeline .events .event span {
+  position: absolute;
+  top: 50%;
+  left: -9%;
+  z-index: 0;
+  display: block;
+  border-top: 2px dashed black;
+  width: 9%;
+  height: 1px;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+div.main #about-us .timeline .events .event:first-of-type {
+  margin-top: 0;
+}
+
+div.main #about-us .timeline .events .event:nth-child(odd) {
+  margin-left: 0;
+  margin-right: 54%;
+}
+
+div.main #about-us .timeline .events .event:nth-child(odd) span {
+  left: auto;
+  right: -9%;
+}
+
+div.main #about-us .timeline .events .event h3 {
+  text-align: center;
+}
+
+div.main #about-us .timeline .events .event img {
+  width: calc(100% - 8px);
+  max-width: 400px;
+  padding: 2px;
+  display: block;
+  margin: 0 auto 14px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+div.main #about-us .timeline .events .event p {
+  margin-bottom: 14px;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+div.main #about-us .timeline.future #verticalLine {
+  border-right-style: dashed;
+  border-right-color: #999999;
+}
+
+div.main #about-us .timeline.future .timelineDate:last-child {
+  background-color: #999999;
+  -webkit-transform: translateY(44px);
+      -ms-transform: translateY(44px);
+          transform: translateY(44px);
+}
+
+div.main #about-us .timeline.future .events .event {
+  border-color: #999999;
+}
+
+div.main #about-us .timeline.future .events .event span {
+  border-top-color: #999999;
+}
+
+div.main #about-us .coloredSkirts {
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background: url(../img/color-skirts.jpg) center center no-repeat;
+  background-size: cover;
+  margin-top: 84px;
+}
+
+div.main #about-us .coloredSkirts blockquote {
+  color: white;
+  text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.4);
+  padding: 44px 14%;
+  margin: 104px 0 134px;
+  font-weight: 300;
+  background-color: rgba(137, 0, 22, 0.6);
+  border-top: 2px solid rgba(137, 0, 22, 0.8);
+  border-bottom: 2px solid rgba(137, 0, 22, 0.8);
+  font-size: 24px;
+  line-height: 38px;
+}
+
+div.main #about-us .coloredSkirts blockquote .quote {
+  font-size: 44px;
+  font-family: 'Times', Times New Roman, serif;
+  display: inline-block;
+  padding: 0 4px;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+div.main #about-us .coloredSkirts blockquote p {
+  padding-top: 14px;
+  margin: 0 0 0 6px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+div.main #about-us .coloredSkirts blockquote p strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: -6px;
+  margin-bottom: 4px;
+}
+
+div.main #about-us .coloredSkirts blockquote p a {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+div.main #about-us .coloredSkirts blockquote p a:hover {
+  border-bottom-width: 2px;
+}
+
+div.main #about-us .employees {
+  padding: 0 10%;
+  font-size: 0px;
+}
+
+div.main #about-us .employees .employee {
+  display: inline-block;
+  text-align: center;
+  width: 19%;
+  font-size: 13px;
+  vertical-align: top;
+  margin: 44px 3% 24px;
+  position: relative;
+}
+
+div.main #about-us .employees .employee img {
+  width: 80%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 100%;
+  border: 2px solid #3c000a;
+  padding: 1px;
+  margin: 0 0 24px;
+  opacity: 0.9;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+div.main #about-us .employees .employee img:hover {
+  border: 2px solid #890016;
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  opacity: 1;
+}
+
+div.main #about-us .employees .employee p {
+  font-size: 11px;
+  line-height: 19px;
+}
+
+div.main #about-us .employees .employee p i {
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
+  color: #890016;
+  padding: 0 2px;
+  font-size: 14px;
+}
+
+div.main #about-us .employees .employee h3 {
+  margin-bottom: 0;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+div.main #about-us .employees .employee h4 {
+  margin: 0 0 14px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999999;
+  font-weight: 400;
+}
+
+div.main #about-us .employees .employee p {
+  margin: 0;
+  padding: 0;
+}
+
+div.main #manufacturers {
+  padding: 104px 0 0;
+  text-align: center;
+}
+
+div.main #manufacturers h2 {
+  display: inline-block;
+  font-size: 42px;
+  line-height: 1.5;
+  padding: 0;
+  margin-bottom: 24px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+div.main #manufacturers p {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+  margin: 0 0 44px;
+  padding: 0 10%;
+  word-spacing: 2px;
+  font-weight: 300;
+}
+
+div.main #manufacturers .manufacturer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.main #manufacturers .manufacturer {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid black;
+  margin-bottom: 1px;
+}
+
+div.main #manufacturers .manufacturer:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+div.main #manufacturers .manufacturer .text {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(50% + 14px);
+  box-sizing: border-box;
+  padding: 24px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  z-index: 2;
+  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  -webkit-transition: opacity 800ms ease-in-out;
+          transition: opacity 800ms ease-in-out;
+}
+
+div.main #manufacturers .manufacturer .text h3 {
+  margin-bottom: 4px;
+}
+
+div.main #manufacturers .manufacturer .text h3 .usa {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 100;
+  text-transform: none;
+  letter-spacing: 0;
+  word-spacing: 0;
+  background-color: #d50023;
+  color: white;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  display: inline-block;
+  padding: 2px 4px 1px;
+}
+
+div.main #manufacturers .manufacturer .text p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+div.main #manufacturers .manufacturer .text a {
+  display: inline-block;
+  margin: 14px 0 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+}
+
+div.main #manufacturers .manufacturer .text a:hover {
+  border-bottom-color: #d50023;
+}
+
+div.main #manufacturers .manufacturer .images.desktop .primaryImage {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage) {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  width: 25%;
+  height: 50%;
+}
+
+div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(3) {
+  right: 0;
+}
+
+div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(4) {
+  top: auto;
+  bottom: 0;
+}
+
+div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(5) {
+  top: auto;
+  bottom: 0;
+  right: 0;
+}
+
+div.main #manufacturers .manufacturer .images.mobile {
+  display: none !important;
+}
+
+div.main #manufacturers .manufacturer .images.mobile img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+div.main #manufacturers .manufacturer:nth-child(even) .text {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  padding-right: 14px;
+}
+
+div.main #manufacturers .manufacturer:nth-child(even) .images.desktop img:not(.primaryImage) {
+  right: auto;
+  left: 25%;
+}
+
+div.main #manufacturers .manufacturer:nth-child(even) .images.desktop img:not(.primaryImage):nth-of-type(3) {
+  left: 0;
+}
+
+div.main #manufacturers .manufacturer:nth-child(even) .images.desktop img:not(.primaryImage):nth-of-type(5) {
+  left: 0;
+}
+
+div.main #manufacturers .manufacturer:nth-child(even) .images.desktop .primaryImage {
+  float: right;
+}
+
+div.main #customers {
+  background-color: #890016;
+  color: white;
+  box-shadow: inset 18px 20px 100px 14px rgba(20, 0, 0, 0.3);
+}
+
+div.main #customers .customerBgImageCycle {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-transition: -webkit-filter 0.5s ease-in-out, filter 0.5s ease-in-out;
+          transition: -webkit-filter 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+div.main #customers div.customers {
+  padding: 34px 5%;
+  margin-right: 50%;
+  box-sizing: border-box;
+}
+
+div.main #customers div.customers h2 {
+  padding: 0;
+  margin: 0 0 24px;
+  font-size: 42px;
+  line-height: 52px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+div.main #customers div.customers p {
+  margin-bottom: 14px;
+  font-weight: 300;
+  word-spacing: 2px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+div.main #market-dates {
+  padding: 164px 0;
+  text-align: center;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+div.main #market-dates .leaves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 50%;
+  min-width: 600px;
+}
+
+div.main #market-dates .flowers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+
+div.main #market-dates .dress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  z-index: 2;
+}
+
+div.main #market-dates .dressOnTable {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  z-index: 1;
+}
+
+div.main #market-dates .markets {
+  position: relative;
+  padding: 14px;
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 3;
+}
+
+div.main #market-dates .markets .market {
+  padding: 34px 14px;
+  margin: 0 14px 28px;
+  width: auto;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+div.main #market-dates .markets .market p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+div.main #market-dates .markets .market p a {
+  text-transform: uppercase;
+}
+
+div.main #market-dates .markets .market p.dateRange {
+  margin-top: 14px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  clear: both;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+footer {
+  clear: both;
+  display: block;
+  height: auto;
+  background: url(../img/skyline.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+footer a {
+  color: white;
+}
+
+footer #contact {
+  color: white;
+  padding: 84px 10%;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer #contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer #contact h4 {
+  margin: 0 0 34px;
+  padding: 0 0 4px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+footer #contact p.showroomAddress {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  margin: 0 7px 0 0;
+  padding: 0;
+  float: left;
+  width: calc(50% - 7px);
+}
+
+footer #contact p.showroomAddress span.telephone {
+  display: block;
+  margin: 44px 0 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 900;
+}
+
+footer #contact p.showroomAddress span.telephone strong {
+  font-weight: 100;
+}
+
+footer #contact form {
+  float: right;
+  margin: 0 0 0 7px;
+  width: calc(50% - 7px);
+}
+
+footer #bottom {
+  background-color: black;
+  display: block;
+  margin: 0;
+  color: white;
+  padding: 4px 14px;
+}
+
+footer #bottom:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer #bottom ul {
+  float: right;
+  display: inline-block;
+  text-align: right;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer #bottom ul li {
+  display: inline-block;
+  padding: 4px 14px 4px;
+}
+
+footer #bottom p {
+  float: left;
+  display: inline-block;
+  padding: 10px 0 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+footer #bottom p i.fa-heart {
+  color: #d50023;
+}
+
+@media (max-width: 1100px) {
+  #customers form .input {
+    width: 100%;
+    float: none;
+    margin: 0 0 4px;
+  }
+  #customers form textarea {
+    height: 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    box-shadow: none;
+  }
+  header h1 {
+    min-height: 80px;
+    margin: 0 14px;
+    padding: 0 0 0 94px;
+    background: url("../img/betty-bottom-logo.png") no-repeat left center;
+    background-size: 80px;
+  }
+  header h1 br {
+    display: block;
+  }
+  nav {
+    font-size: 14px;
+    line-height: 20px;
+    float: none;
+    width: 100%;
+    padding: 0 0 4px;
+    margin: 0;
+    background: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 0;
+    z-index: 20;
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.05);
+  }
+  nav ul li {
+    padding: 0;
+    display: inline-block;
+  }
+  nav ul li a {
+    padding: 0;
+    margin: 5px;
+    border-bottom: 2px solid transparent;
+  }
+  nav ul li a.active {
+    border-right: 0;
+    border-bottom-color: #d50023;
+  }
+  nav .elephant {
+    display: none;
+  }
+  div.main {
+    float: none;
+    width: 100%;
+    box-shadow: none;
+  }
+  div.main section {
+    box-shadow: none;
+  }
+  div.main section#about-us .timeline {
+    padding: 0 4% 44px;
+  }
+  div.main section#about-us .employees {
+    padding: 0;
+  }
+  div.main section#manufacturers h2 {
+    display: block;
+    background: black;
+    color: white;
+    padding: 14px;
+    margin-bottom: 24px;
+    font-size: 6vw;
+    border: 0;
+  }
+  div.main section#manufacturers p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0 24px 44px;
+  }
+  div.main section#market-dates .leaves {
+    top: -140px;
+  }
+  div.main section#market-dates .dressOnTable {
+    right: -64px;
+  }
+  div.main section#market-dates .markets {
+    width: 80%;
+  }
+  div.main section#customers .customerBgImageCycle {
+    display: none;
+  }
+  div.main section#customers .customers {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  div.main section#customers form .input {
+    width: calc(50% - 7px);
+    float: left;
+    margin: 0 14px 14px 0;
+  }
+  div.main section#customers form .input.email {
+    margin-right: 0;
+  }
+  div.main section#customers form textarea {
+    height: 40px;
+  }
+  #map-canvas {
+    height: 200px;
+  }
+  footer {
+    background: #666 url(../img/market-center-1.jpg) center top no-repeat;
+    background-size: cover;
+  }
+  footer #contact h4 {
+    margin-bottom: 24px;
+  }
+  footer #contact p.showroomAddress {
+    float: none;
+    width: 100%;
+    padding: 0 0 14px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 0 0 24px;
+  }
+  footer #contact p.showroomAddress span.telephone {
+    margin-top: 24px;
+  }
+  footer #contact form {
+    width: 100%;
+    margin: 0;
+  }
+  footer #bottom {
+    text-align: center;
+    padding-bottom: 34px;
+  }
+  footer #bottom ul {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  footer #bottom p {
+    float: none;
+    display: block;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  form .input {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 0 4px !important;
+  }
+  form textarea {
+    height: 60px;
+  }
+  header ul {
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 24px;
+  }
+  header ul li {
+    padding: 4px 7px 4px;
+  }
+  header h1 {
+    min-height: 0;
+    margin: 0 0 0 14px;
+    padding: 0 0 0 56px;
+    font-size: 29px;
+    line-height: 26px;
+    background: url("../img/betty-bottom-logo.png") no-repeat left top;
+    background-size: 50px;
+  }
+  nav {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  div.main section#about-us h2 {
+    font-size: 44px;
+    line-height: 54px;
+    margin: 0 0 44px;
+    padding: 0 4px;
+  }
+  div.main section#about-us h2 .logo {
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -4px;
+  }
+  div.main section#about-us h2 i {
+    font-size: 90px;
+    padding-left: 4px;
+  }
+  div.main section#about-us .timeline .events .event {
+    margin: 34px 0 !important;
+    background-color: white;
+  }
+  div.main section#about-us .timeline .events .event span {
+    display: none;
+  }
+  div.main section#about-us .coloredSkirts {
+    height: 120px;
+  }
+  div.main section#about-us .coloredSkirts blockquote {
+    display: none;
+  }
+  div.main section#about-us .meet {
+    padding: 4px 14px;
+    width: auto;
+    max-width: 200px;
+    margin-top: -54px;
+  }
+  div.main section#about-us .employees .employee {
+    width: 44%;
+  }
+  div.main section#manufacturers h2 {
+    font-size: 7.8vw;
+  }
+  div.main section#manufacturers p {
+    margin: 0 14px 44px;
+  }
+  div.main section#manufacturers .manufacturer {
+    padding: 0 14px;
+    margin: 64px 0 0;
+  }
+  div.main section#manufacturers .manufacturer:first-of-type {
+    margin-top: 24px;
+  }
+  div.main section#manufacturers .manufacturer .text {
+    position: static;
+    width: 100%;
+    padding: 0 0 14px;
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    opacity: 1 !important;
+    -webkit-transition: none;
+            transition: none;
+  }
+  div.main section#manufacturers .manufacturer .images.desktop {
+    display: none;
+  }
+  div.main section#manufacturers .manufacturer .images.mobile {
+    display: block !important;
+  }
+  div.main section#market-dates .leaves {
+    left: -264px;
+  }
+  div.main section#market-dates .flowers {
+    right: -64px;
+  }
+  div.main section#market-dates .dress {
+    width: 327px;
+    left: -70px;
+  }
+  div.main section#market-dates .dressOnTable {
+    display: none;
+  }
+  div.main section#market-dates .markets {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  div.main section#market-dates .markets h2 {
+    font-size: 40px;
+    line-height: 46px;
+    padding: 24px 0;
+  }
+  div.main section#market-dates .markets .market {
+    margin: 0 0 28px;
+    padding: 28px 0 0;
+    width: calc(100% - 28px);
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  div.main section#market-dates .markets .market:first-of-type {
+    border: 0;
+    padding-top: 0;
+  }
+  div.main section#market-dates .markets .market h3 br {
+    display: none;
+  }
+  footer #contact {
+    padding: 84px 4%;
+    text-align: center;
+  }
+  footer #contact p.showroomAddress {
+    font-size: 11px;
+  }
+  footer #contact p.showroomAddress span.telephone {
+    font-size: 18px;
+  }
+}

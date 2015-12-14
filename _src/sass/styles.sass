@@ -1,0 +1,1005 @@
+//Sass Variables
+$logoImage : '../img/betty-bottom-logo.png'
+$mainFontFamily : 'Lato'
+$secondaryFontFamily : 'Josefin Sans'
+$backupFontFamily : Arial, Helvetica, sans-serif
+$mainColor : #d50023
+$errorColor : lighten($mainColor, 5%)
+$successColor : darken(adjust-hue($errorColor, 100deg), 20%)
+
+//Global stuff
+b
+  font-weight: 700
+.noWrap
+  white-space: nowrap
+.allCaps
+  text-transform: uppercase
+.unhide
+  display: block !important
+  opacity: 1 !important
+  visibility: visible !important
+  top: 0 !important
+.bullet
+  display: inline-block
+  width: 7px
+  height: 7px
+  border-radius: 100%
+  background-color: white
+  margin: 0 0 4px
+.srOnly
+  display: none
+.owl-theme .owl-controls .owl-buttons div
+  background: $mainColor
+.owl-theme .owl-controls .owl-page span
+  background: $mainColor
+
+body
+  margin: 0
+  padding: 0
+  min-width: 290px
+  font-family: $mainFontFamily, $backupFontFamily
+  a
+    color: black
+    text-decoration: none
+    transition: color 0.2s
+    &:hover
+      color: $mainColor
+form
+  margin: 84px 0 0
+  width: 100%
+  text-transform: none
+  input
+    width: 100%
+    height: 40px
+    display: block
+    padding: 7px
+    outline: none
+    box-sizing: border-box
+    border: 2px solid black
+    border-radius: 0
+    font: 400 16px/22px $mainFontFamily, $backupFontFamily
+  label
+    display: block
+    text-align: left
+    margin: 0 0 14px
+    font-size: 14px
+  textarea
+    width: 100%
+    height: 40px
+    outline: none
+    padding: 7px
+    display: block
+    box-sizing: border-box
+    border: 2px solid black
+    font: 400 16px/22px $mainFontFamily, $backupFontFamily
+    transition: height 0.2s ease-in-out
+  button
+    width: 100%
+    outline: none
+    display: block
+    margin: 0
+    padding: 7px 14px
+    height: 60px
+    box-sizing: border-box
+    font: 900 18px/22px $mainFontFamily, $backupFontFamily
+    letter-spacing: 2px
+    position: relative
+    box-sizing: border-box
+    background-color: white
+    border: 2px solid black
+    text-transform: uppercase
+    cursor: pointer
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in
+    &:hover
+      color: white
+      background-color: black
+      //border-color: white
+    &:active
+      border-width: 6px
+      background-color: darken( desaturate( adjust-hue($mainColor, 130deg), 50%), 20%)
+  .input
+    width: calc(50% - 7px)
+    float: left
+    display: inline-block
+    margin: 0 14px 14px 0
+    &.email
+      margin-right: 0
+  .textArea
+    clear: both
+    width: 100%
+    display: block
+    margin: 0 0 14px
+  #response.active
+    background: white
+    color: black
+    padding: 14px
+    border: 2px solid black
+    margin: 0 0 14px
+    &.error
+      color: $errorColor
+      border-color: $errorColor
+      background-color: lighten($errorColor, 90%)
+    &.success
+      color: $successColor
+      border-color: $successColor
+      background-color: lighten($successColor, 90%)
+
+header
+  display: block
+  margin: 0
+  padding: 0 0 24px
+  position: relative
+  z-index: 15
+  box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1)
+  ul
+    text-align: right
+    padding: 14px 0
+    margin: 0
+    font-size: 32px
+    line-height: 36px
+    li
+      display: inline-block
+      padding: 4px 14px 4px
+  h1
+    margin: 0
+    padding: 0 14px
+    text-transform: uppercase
+    font-family: $secondaryFontFamily, $backupFontFamily
+    font-weight: 300
+    font-size: 39px
+    line-height: 42px
+    letter-spacing: 1px
+    b
+      letter-spacing: 0
+      font-weight: 700
+    br
+      display: none
+nav
+  float: left
+  //position: fixed
+  width: 200px
+  margin: 18px 14px 0
+  padding: 207px 0 0
+  font: 300 18px/24px $mainFontFamily, $backupFontFamily
+  text-transform: uppercase
+  position: relative
+  background: url($logoImage) no-repeat center top
+    size: 200px
+  &.siteNavFixed
+    visibility: hidden
+    opacity: 0
+    position: fixed
+    padding-top: 0
+    transition: all 200ms
+    background: none
+    background-color: white
+    top: -300px
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      a
+        display: block
+        margin: 14px 0
+        &.active
+          color: $mainColor
+          border-right: 5px solid $mainColor
+
+div.main
+  float: right
+  width: calc(100% - 229px)
+  padding: 0
+  box-shadow: inset 5px 0px 14px -5px rgba(0, 0, 0, 0.05)
+  position: relative
+  z-index: 10
+  a
+    color: $mainColor
+    transition: border 100ms 150ms
+    &:hover
+      border-bottom: 3px solid $mainColor
+  section
+    margin: 0
+    padding: 104px 0
+    display: block
+    position: relative
+    box-shadow: inset 5px 0px 14px -5px rgba(0, 0, 0, 0.05)
+    &:last-child
+      margin-bottom: 0
+    h2
+      margin: 0 0 14px
+      padding: 24px
+      font-size: 54px
+      line-height: 64px
+      font-weight: 100
+      text-transform: uppercase
+      font-family: $secondaryFontFamily, $backupFontFamily
+    h3
+      margin: 0 0 14px
+      padding: 0
+      letter-spacing: 2px
+      text-transform: uppercase
+      font: 700 20px/28px $secondaryFontFamily, $backupFontFamily
+    p
+      margin: 0
+      padding: 0
+      font-size: 14px
+      font-weight: 400
+      line-height: 20px
+
+  #home
+    min-height: 560px
+    background: url(../img/store-front-1.jpg) no-repeat center center
+      size: cover
+    position: relative
+    display: block
+    p
+      position: absolute
+      display: block
+      padding: 44px 14%
+      bottom: 0
+      color: white
+      background-color: rgba(darken($mainColor, 15%), 0.6)
+      border-top: 2px solid rgba(darken($mainColor, 15%), 0.8)
+      text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.5)
+      font-weight: 300
+      font-size: 28px
+      line-height: 44px
+  #about-us
+    padding: 104px 0 0
+    //background-image: linear-gradient(#fbfaf7, #f6f1f1 100%)
+    h2
+      text-align: center
+      vertical-align: top
+      margin-bottom: 64px
+      &.meet
+        width: 344px
+        margin: -40px auto 0
+        padding: 14px
+        z-index: 1
+        display: block
+        font-size: 36px
+        line-height: 46px
+        text-align: center
+        background-color: white
+        color: black
+        border: 2px solid black
+        b
+          display: inline
+      b
+        display: none
+      .logo
+        display: inline-block
+        width: 120px
+        height: 120px
+        margin-top: -20px
+        vertical-align: top
+        background: url($logoImage) no-repeat center center
+          size: 100%
+        transform: rotate(5deg)
+      i
+        font-style: normal
+        font-size:120px
+        display: inline-block
+        margin-top: -14px
+        font-weight: 900
+        vertical-align: top
+        padding-left: 14px
+        font-family: 'Times', Times New Roman, serif
+        transform: translateY(14px) rotate(5deg)
+    .timeline
+      width: 100%
+      padding: 0 14% 44px
+      box-sizing: border-box
+      position: relative
+      #verticalLine
+        position: absolute
+        width: 50%
+        left: -1px
+        border-right: 2px solid black
+        height: 100%
+      .timelineDate
+        width: 72px
+        height:24px
+        font-size: 14px
+        line-height: 22px
+        margin: 0 auto
+        padding: 24px 0
+        text-align: center
+        color: white
+        background-color: black
+        border-radius: 100%
+        position: relative
+        z-index: 1
+      .events
+        .event
+          position: relative
+          z-index: 2
+          margin-left: 54%
+          margin-top: -100px
+          padding: 24px
+          background-color: white
+          border: 2px solid black
+          span
+            position: absolute
+            top: 50%
+            left: -9%
+            z-index: 0
+            display: block
+            border-top: 2px dashed black
+            width: 9%
+            height: 1px
+            transform: translateY(-1px)
+          &:first-of-type
+            margin-top: 0
+          &:nth-child(odd)
+            margin-left: 0
+            margin-right: 54%
+            span
+              left: auto
+              right: -9%
+          h3
+            text-align: center
+          img
+            width: calc(100% - 8px)
+            max-width: 400px
+            padding: 2px
+            display: block
+            margin: 0 auto 14px
+            border: 2px solid rgba(0, 0, 0, 0.2)
+          p
+            margin-bottom: 14px
+            font-size: 13px
+            line-height: 19px
+            //background-color: white
+      &.future
+        #verticalLine
+          border-right-style: dashed
+          border-right-color: #999999
+        .timelineDate:last-child
+          background-color: #999999
+          transform: translateY(44px)
+        .events
+          .event
+            border-color: #999999
+            span
+              border-top-color: #999999
+    .coloredSkirts
+      width: 100%
+      border-top: 2px solid black
+      border-bottom: 2px solid black
+      background: url(../img/color-skirts.jpg) center center no-repeat
+        size: cover
+      margin-top: 84px
+      blockquote
+        color: white
+        text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.4)
+        padding: 44px 14%
+        margin: 104px 0 134px
+        font-weight: 300
+        background-color: rgba(darken($mainColor, 15%), 0.6)
+        border-top: 2px solid rgba(darken($mainColor, 15%), 0.8)
+        border-bottom: 2px solid rgba(darken($mainColor, 15%), 0.8)
+        font-size: 24px
+        line-height: 38px
+        .quote
+          font-size: 44px
+          font-family: 'Times', Times New Roman, serif
+          display: inline-block
+          padding: 0 4px
+          transform: translateY(10px)
+        p
+          padding-top: 14px
+          margin: 0 0 0 6px
+          font-size: 14px
+          line-height: 26px
+          font-weight: 300
+          strong
+            display: block
+            font-size: 18px
+            font-weight: 400
+            line-height: 24px
+            margin-left: -6px
+            margin-bottom: 4px
+          a
+            color: white
+            border-bottom: 1px solid white
+            &:hover
+              border-bottom-width: 2px
+    .employees
+      padding: 0 10%
+      font-size: 0px
+      .employee
+        display: inline-block
+        text-align: center
+        width: 19%
+        font-size: 13px
+        vertical-align: top
+        margin: 44px 3% 24px
+        position: relative
+        img
+          width: 80%
+          max-width: 180px
+          height: auto
+          border-radius: 100%
+          border: 2px solid darken($mainColor, 30%)
+          padding: 1px
+          margin: 0 0 24px
+          opacity: 0.9
+          transition: all 0.2s ease-in-out
+          &:hover
+            border: 2px solid darken($mainColor, 15%)
+            transform: rotate(-2deg)
+            opacity: 1
+        p
+          font-size: 11px
+          line-height: 19px
+          i
+            transform: rotate(20deg)
+            color: darken($mainColor, 15%)
+            padding: 0 2px
+            font-size: 14px
+        h3
+          margin-bottom: 0
+          font-size: 17px
+          line-height: 23px
+        h4
+          margin: 0 0 14px
+          padding: 0
+          font-size: 12px
+          line-height: 18px
+          color: #999999
+          font-weight: 400
+        p
+          margin: 0
+          padding: 0
+
+  #manufacturers
+    padding: 104px 0 0
+    text-align: center
+    h2
+      display: inline-block
+      font-size: 42px
+      line-height: 1.5
+      padding: 0
+      margin-bottom: 24px
+      border-bottom: 2px solid rgba(0, 0, 0, 0.2)
+    p
+      font-size: 18px
+      line-height: 28px
+      text-align: justify
+      margin: 0 0 44px
+      padding: 0 10%
+      word-spacing: 2px
+      font-weight: 300
+    .manufacturer:after
+      content: ""
+      display: table
+      clear: both
+    .manufacturer
+      position: relative
+      overflow: hidden
+      border-bottom: 2px solid black
+      margin-bottom: 1px
+      &:last-child
+        border-bottom: 0
+        margin-bottom: 0
+      .text
+        text-align: left
+        position: absolute
+        bottom: 0
+        left: 0
+        width: calc(50% + 14px)
+        box-sizing: border-box
+        padding: 24px
+        overflow: hidden
+        background-color: rgba(white, 0.9)
+        color: black
+        z-index: 2
+        box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1)
+        opacity: 1
+        transition: opacity 800ms ease-in-out
+        h3
+          margin-bottom: 4px
+          .usa
+            font-size: 14px
+            line-height: 18px
+            font-weight: 100
+            text-transform: none
+            letter-spacing: 0
+            word-spacing: 0
+            background-color: $mainColor
+            color: white
+            transform: translateY(-3px)
+            display: inline-block
+            padding: 2px 4px 1px
+        p
+          margin: 0
+          padding: 0
+          font-size: 14px
+          line-height: 20px
+          font-weight: 400
+        a
+          display: inline-block
+          margin: 14px 0 0
+          font-weight: 700
+          text-transform: uppercase
+          border-bottom: 3px solid transparent
+          &:hover
+            border-bottom-color: $mainColor
+      .images
+        &.desktop
+          .primaryImage
+            width: 50%
+            display: block
+            float: left
+          img:not(.primaryImage)
+            position: absolute
+            top: 0
+            right: 25%
+            width: 25%
+            height: 50%
+            &:nth-of-type(3)
+              right: 0
+            &:nth-of-type(4)
+              top: auto
+              bottom: 0
+            &:nth-of-type(5)
+              top: auto
+              bottom: 0
+              right: 0
+        &.mobile
+          display: none !important
+          img
+            display: block
+            width: 100%
+            height: auto
+      &:nth-child(even)
+        .text
+          left: auto
+          right: 0
+          border-right: 0
+          padding-right: 14px
+        .images
+          &.desktop
+            img:not(.primaryImage)
+              right: auto
+              left: 25%
+              &:nth-of-type(3)
+                left: 0
+              &:nth-of-type(5)
+                left: 0
+            .primaryImage
+              float: right
+
+  #customers
+    background-color: darken($mainColor, 15%)
+    color: white
+    box-shadow: inset 18px 20px 100px 14px rgba(20,0,0,0.3)
+    .customerBgImageCycle
+      position: absolute !important
+      top: 0
+      right: 0
+      width: 50%
+      height: 100%
+      transition: filter 0.5s ease-in-out
+      //filter: sepia(100%) saturate(300%) hue-rotate(-55deg)
+      //&:hover
+        filter: none
+    div.customers
+      padding: 34px 5%
+      margin-right: 50%
+      box-sizing: border-box
+      h2
+        padding: 0
+        margin: 0 0 24px
+        font-size: 42px
+        line-height: 52px
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2)
+      p
+        margin-bottom: 14px
+        font-weight: 300
+        word-spacing: 2px
+        font-size: 18px
+        line-height: 28px
+
+  #market-dates
+    padding: 164px 0
+    text-align: center
+    overflow: hidden
+    background-color: #f5f5f5
+    .leaves
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 5
+      width: 50%
+      min-width: 600px
+    .flowers
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 4
+    .dress
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 500px
+      z-index: 2
+    .dressOnTable
+      position: absolute
+      bottom: 0
+      right: -40px
+      z-index: 1
+    .markets
+      position: relative
+      padding: 14px
+      width: 60%
+      margin: 0 auto
+      box-sizing: border-box
+      border: 2px solid black
+      background-color: rgba(255, 255, 255, 0.8)
+      z-index: 3
+      .market
+        padding: 34px 14px
+        margin: 0 14px 28px
+        width: auto
+        display: inline-block
+        vertical-align: bottom
+        p
+          font-size: 14px
+          line-height: 20px
+          letter-spacing: 1px
+          word-spacing: 1px
+          a
+            text-transform: uppercase
+          &.dateRange
+            margin-top: 14px
+            text-transform: uppercase
+            font-weight: 900
+
+//Google Maps
+#map-canvas
+  width: 100%
+  height: 400px
+  margin: 0
+  padding: 0
+  display: block
+  clear: both
+  border-top: 1px solid black
+  border-bottom: 1px solid black
+//End Google Maps
+
+footer
+  clear: both
+  display: block
+  height: auto
+  background: url(../img/skyline.jpg) center center no-repeat
+    size: cover
+  a
+    color: white
+  #contact
+    &:after
+      content: ""
+      display: table
+      clear: both
+    color: white
+    padding: 84px 10%
+    text-transform: uppercase
+    margin: 0
+    background-color: rgba(0, 0, 0, 0.7)
+    h4
+      margin: 0 0 34px
+      padding: 0 0 4px
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1)
+      font-size: 30px
+      line-height: 36px
+      font-weight: 900
+      letter-spacing: 3px
+    p.showroomAddress
+      font-size: 14px
+      line-height: 24px
+      font-weight: 300
+      letter-spacing: 2px
+      word-spacing: 2px
+      margin: 0 7px 0 0
+      padding: 0
+      float: left
+      width: calc(50% - 7px)
+      span.telephone
+        display: block
+        margin: 44px 0 0
+        font-size:20px
+        line-height: 26px
+        font-weight: 900
+        strong
+          font-weight: 100
+    form
+      float: right
+      margin: 0 0 0 7px
+      width: calc(50% - 7px)
+
+  #bottom
+    background-color: black
+    display: block
+    margin: 0
+    color: white
+    padding: 4px 14px
+    &:after
+      content: ""
+      display: table
+      clear: both
+    ul
+      float: right
+      display: inline-block
+      text-align: right
+      padding: 0
+      margin: 10px 0
+      li
+        display: inline-block
+        padding: 4px 14px 4px
+    p
+      float: left
+      display: inline-block
+      padding: 10px 0 0
+      margin: 0
+      font-size: 12px
+      font-weight: 300
+      i.fa-heart
+        color: $mainColor
+
+
+@media(max-width: 1100px)
+  #customers
+    form
+      .input
+        width: 100%
+        float: none
+        margin: 0 0 4px
+      textarea
+        height: 60px
+
+@media (max-width:900px)
+  header
+    box-shadow: none
+    h1
+      min-height: 80px
+      margin: 0 14px
+      padding: 0 0 0 94px
+      background: url($logoImage) no-repeat left center
+        size: 80px
+      br
+        display: block
+
+  nav
+    //position: fixed
+    font-size: 14px
+    line-height: 20px
+    float: none
+    width: 100%
+    padding: 0 0 4px
+    margin: 0
+    background: white
+    border-top: 1px solid black
+    border-bottom: 1px solid black
+    padding-top: 0
+    //text-align: center
+    z-index: 20
+    box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.05)
+    ul li
+      padding: 0
+      display: inline-block
+      a
+        padding: 0
+        margin: 5px
+        border-bottom: 2px solid transparent
+        &.active
+          border-right: 0
+          border-bottom-color: $mainColor
+    .elephant
+      display: none
+  div.main
+    float: none
+    width: 100%
+    box-shadow: none
+    section
+      box-shadow: none
+      &#about-us
+        .timeline
+          padding: 0 4% 44px
+        .meet
+        .employees
+          padding: 0
+      &#manufacturers
+        h2
+          display: block
+          background: black
+          color: white
+          padding: 14px
+          margin-bottom: 24px
+          font-size: 6vw
+          border: 0
+        p
+          text-align: left
+          font-size: 14px
+          line-height: 20px
+          padding: 0
+          margin: 0 24px 44px
+      &#market-dates
+        .leaves
+          top: -140px
+        .dressOnTable
+          right: -64px
+        .markets
+          width: 80%
+      &#customers
+        .customerBgImageCycle
+          display: none
+        .customers
+          position: relative
+          z-index: 2
+          width: 100%
+        form
+          .input
+            width: calc(50% - 7px)
+            float: left
+            margin: 0 14px 14px 0
+            &.email
+              margin-right: 0
+          textarea
+            height: 40px
+
+  #map-canvas
+    height: 200px
+  footer
+    background: #666 url(../img/market-center-1.jpg) center top no-repeat
+      size: cover
+    #contact
+      h4
+        margin-bottom: 24px
+      p.showroomAddress
+        float: none
+        width: 100%
+        padding: 0 0 14px
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1)
+        margin: 0 0 24px
+        span.telephone
+          margin-top: 24px
+      form
+        width: 100%
+        margin: 0
+    #bottom
+      text-align: center
+      padding-bottom: 34px
+      ul
+        float: none
+        display: block
+        text-align: center
+      p
+        float: none
+        display: block
+        padding: 4px 0
+
+@media (max-width:480px)
+  form
+    .input
+      width: 100% !important
+      float: none !important
+      margin: 0 0 4px !important
+    textarea
+      height: 60px
+  header
+    ul
+      font-size: 22px
+      line-height: 26px
+      padding-bottom: 24px
+      li
+        padding: 4px 7px 4px
+    h1
+      min-height: 0
+      margin: 0 0 0 14px
+      padding: 0 0 0 56px
+      font-size: 29px
+      line-height: 26px
+      background: url($logoImage) no-repeat left top
+        size: 50px
+  nav
+    font-weight: 400
+    font-size: 12px
+    line-height: 18px
+  div.main
+    section
+      &#about-us
+        h2
+          font-size: 44px
+          line-height: 54px
+          margin: 0 0 44px
+          padding: 0 4px
+          .logo
+            width: 80px
+            height: 80px
+            margin-top: -10px
+            margin-left: -4px
+          i
+            font-size: 90px
+            padding-left: 4px
+        .timeline
+          .events
+            .event
+              margin: 34px 0 !important
+              background-color: white
+              span
+                display: none
+        .coloredSkirts
+          height: 120px
+          blockquote
+            display: none
+        .meet
+          padding: 4px 14px
+          width: auto
+          max-width: 200px
+          margin-top: -54px
+        .employees
+          .employee
+            width: 44%
+      &#manufacturers
+        h2
+          font-size: 7.8vw
+        p
+          margin: 0 14px 44px
+        .manufacturer
+          padding: 0 14px
+          margin: 64px 0 0
+          &:first-of-type
+            margin-top: 24px
+          .text
+            position: static
+            width: 100%
+            padding: 0 0 14px
+            background-color: white
+            color: black
+            box-shadow: none
+            opacity: 1 !important
+            transition: none
+            h3
+          .images
+            &.desktop
+              display: none
+            &.mobile
+              display: block !important
+      &#market-dates
+        .leaves
+          left: -264px
+        .flowers
+          right: -64px
+        .dress
+          width: 327px
+          left: -70px
+        .dressOnTable
+          display: none
+        .markets
+          background-color: rgba(255, 255, 255, 0.85)
+          h2
+            font-size: 40px
+            line-height: 46px
+            padding: 24px 0
+          .market
+            margin: 0 0 28px
+            padding: 28px 0 0
+            width: calc(100% - 28px)
+            border-top: 2px solid rgba(0, 0, 0, 0.1)
+            &:first-of-type
+              border: 0
+              padding-top: 0
+            h3
+              br
+                display: none
+
+  footer
+    #contact
+      padding: 84px 4%
+      text-align: center
+      p.showroomAddress
+        font-size: 11px
+        span.telephone
+          font-size: 18px
