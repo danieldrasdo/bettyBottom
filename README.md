@@ -4,7 +4,7 @@
 
 1. I used [myStarterKit](https://github.com/danieldrasdo/myStarterKit) to start this project, which uses gulp to handle things like autoprefixing, Sass compiling, BrowserSync, etc.
 2. Open the project folder in your favorite IDE, currently I'm liking Atom.io.
-3. `CMD` into the project directory and run `npm install`, then `npm update`.\*
+3. `Terminal` into the project directory and run `npm install`, then `npm update`.\*
 4. While still in your project directory run `gulp`.
 5. Open sass/js files within `_src` (these two output to the assets directory).
 
