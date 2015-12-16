@@ -49,7 +49,7 @@ body a {
   color: black;
   text-decoration: none;
   -webkit-transition: color 0.2s;
-          transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 body a:hover {
@@ -91,7 +91,7 @@ form textarea {
   border: 2px solid black;
   font: 400 16px/22px "Lato", Arial, Helvetica, sans-serif;
   -webkit-transition: height 0.2s ease-in-out;
-          transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
 }
 
 form button {
@@ -111,7 +111,7 @@ form button {
   text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
-          transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
 }
 
 form button:hover {
@@ -222,7 +222,7 @@ nav.siteNavFixed {
   position: fixed;
   padding-top: 0;
   -webkit-transition: all 200ms;
-          transition: all 200ms;
+  transition: all 200ms;
   background: none;
   background-color: white;
   top: -300px;
@@ -259,7 +259,7 @@ div.main {
 div.main a {
   color: #d50023;
   -webkit-transition: border 100ms 150ms;
-          transition: border 100ms 150ms;
+  transition: border 100ms 150ms;
 }
 
 div.main a:hover {
@@ -367,7 +367,6 @@ div.main #about-us h2 .logo {
   background: url("../img/betty-bottom-logo.png") no-repeat center center;
   background-size: 100%;
   -webkit-transform: rotate(5deg);
-      -ms-transform: rotate(5deg);
           transform: rotate(5deg);
 }
 
@@ -381,7 +380,6 @@ div.main #about-us h2 i {
   padding-left: 14px;
   font-family: 'Times', Times New Roman, serif;
   -webkit-transform: translateY(14px) rotate(5deg);
-      -ms-transform: translateY(14px) rotate(5deg);
           transform: translateY(14px) rotate(5deg);
 }
 
@@ -435,7 +433,6 @@ div.main #about-us .timeline .events .event span {
   width: 9%;
   height: 1px;
   -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
           transform: translateY(-1px);
 }
 
@@ -480,7 +477,6 @@ div.main #about-us .timeline.future #verticalLine {
 div.main #about-us .timeline.future .timelineDate:last-child {
   background-color: #999999;
   -webkit-transform: translateY(44px);
-      -ms-transform: translateY(44px);
           transform: translateY(44px);
 }
 
@@ -520,7 +516,6 @@ div.main #about-us .coloredSkirts blockquote .quote {
   display: inline-block;
   padding: 0 4px;
   -webkit-transform: translateY(10px);
-      -ms-transform: translateY(10px);
           transform: translateY(10px);
 }
 
@@ -561,7 +556,7 @@ div.main #about-us .employees .employee {
   width: 19%;
   font-size: 13px;
   vertical-align: top;
-  margin: 44px 3% 24px;
+  margin: 54px 3% 24px;
   position: relative;
 }
 
@@ -571,19 +566,81 @@ div.main #about-us .employees .employee img {
   height: auto;
   border-radius: 100%;
   border: 2px solid #3c000a;
-  padding: 1px;
+  padding: 3px;
   margin: 0 0 24px;
-  opacity: 0.9;
+  opacity: 1;
+  background-color: white;
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  z-index: 2;
 }
 
-div.main #about-us .employees .employee img:hover {
+div.main #about-us .employees .employee .transitionIcon {
+  display: block;
+  font-size: 30px;
+  line-height: 30px;
+  color: #890016;
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 15px);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 450ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+  transition: all 450ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+}
+
+div.main #about-us .employees .employee .transitionIcon:nth-child(3) {
+  -webkit-transition: all 450ms 100ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+  transition: all 450ms 100ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+}
+
+div.main #about-us .employees .employee .transitionIcon:nth-child(4) {
+  -webkit-transition: all 450ms 140ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+  transition: all 450ms 140ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+}
+
+div.main #about-us .employees .employee .transitionIcon:nth-child(5) {
+  -webkit-transition: all 450ms 180ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+  transition: all 450ms 180ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+}
+
+div.main #about-us .employees .employee .transitionIcon:nth-child(6) {
+  -webkit-transition: all 450ms 220ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+  transition: all 450ms 220ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+}
+
+div.main #about-us .employees .employee:hover img {
   border: 2px solid #890016;
   -webkit-transform: rotate(-2deg);
-      -ms-transform: rotate(-2deg);
           transform: rotate(-2deg);
+  opacity: 0.9;
+}
+
+div.main #about-us .employees .employee:hover .transitionIcon {
+  -webkit-transform: translate(-300%, -30%);
+          transform: translate(-300%, -30%);
   opacity: 1;
+}
+
+div.main #about-us .employees .employee:hover .transitionIcon:nth-child(3) {
+  -webkit-transform: translate(-190%, -175%);
+          transform: translate(-190%, -175%);
+}
+
+div.main #about-us .employees .employee:hover .transitionIcon:nth-child(4) {
+  -webkit-transform: translate(10%, -230%);
+          transform: translate(10%, -230%);
+}
+
+div.main #about-us .employees .employee:hover .transitionIcon:nth-child(5) {
+  -webkit-transform: translate(205%, -174%);
+          transform: translate(205%, -174%);
+}
+
+div.main #about-us .employees .employee:hover .transitionIcon:nth-child(6) {
+  -webkit-transform: translate(330%, -30%);
+          transform: translate(330%, -30%);
 }
 
 div.main #about-us .employees .employee p {
@@ -593,7 +650,6 @@ div.main #about-us .employees .employee p {
 
 div.main #about-us .employees .employee p i {
   -webkit-transform: rotate(20deg);
-      -ms-transform: rotate(20deg);
           transform: rotate(20deg);
   color: #890016;
   padding: 0 2px;
@@ -677,7 +733,7 @@ div.main #manufacturers .manufacturer .text {
   box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
   opacity: 1;
   -webkit-transition: opacity 800ms ease-in-out;
-          transition: opacity 800ms ease-in-out;
+  transition: opacity 800ms ease-in-out;
 }
 
 div.main #manufacturers .manufacturer .text h3 {
@@ -694,7 +750,6 @@ div.main #manufacturers .manufacturer .text h3 .usa {
   background-color: #d50023;
   color: white;
   -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
           transform: translateY(-3px);
   display: inline-block;
   padding: 2px 4px 1px;
@@ -795,8 +850,10 @@ div.main #customers .customerBgImageCycle {
   right: 0;
   width: 50%;
   height: 100%;
-  -webkit-transition: -webkit-filter 0.5s ease-in-out, filter 0.5s ease-in-out;
-          transition: -webkit-filter 0.5s ease-in-out, filter 0.5s ease-in-out;
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
 }
 
 div.main #customers div.customers {
@@ -1256,7 +1313,7 @@ footer #bottom p i.fa-heart {
     box-shadow: none;
     opacity: 1 !important;
     -webkit-transition: none;
-            transition: none;
+    transition: none;
   }
   div.main section#manufacturers .manufacturer .images.desktop {
     display: none;

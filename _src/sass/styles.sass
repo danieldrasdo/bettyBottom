@@ -6,6 +6,9 @@ $backupFontFamily : Arial, Helvetica, sans-serif
 $mainColor : #d50023
 $errorColor : lighten($mainColor, 5%)
 $successColor : darken(adjust-hue($errorColor, 100deg), 20%)
+//$timing : cubic-bezier(.75,.27,.36,.82)
+$timing : cubic-bezier(.74, -0.39, .27, 1.42)
+
 
 //Global stuff
 b
@@ -279,7 +282,7 @@ div.main
         transform: rotate(5deg)
       i
         font-style: normal
-        font-size:120px
+        font-size: 120px
         display: inline-block
         margin-top: -14px
         font-weight: 900
@@ -300,7 +303,7 @@ div.main
         height: 100%
       .timelineDate
         width: 72px
-        height:24px
+        height: 24px
         font-size: 14px
         line-height: 22px
         margin: 0 auto
@@ -415,7 +418,7 @@ div.main
         width: 19%
         font-size: 13px
         vertical-align: top
-        margin: 44px 3% 24px
+        margin: 54px 3% 24px
         position: relative
         img
           width: 80%
@@ -423,14 +426,48 @@ div.main
           height: auto
           border-radius: 100%
           border: 2px solid darken($mainColor, 30%)
-          padding: 1px
+          padding: 3px
           margin: 0 0 24px
-          opacity: 0.9
+          opacity: 1
+          background-color: white
           transition: all 0.2s ease-in-out
-          &:hover
+          position: relative
+          z-index: 2
+        .transitionIcon
+          display: block
+          font-size: 30px
+          line-height: 30px
+          color: darken($mainColor, 15%)
+          position: absolute
+          top: 30px
+          left: calc(50% - 15px)
+          z-index: 1
+          opacity: 0
+          transition: all 450ms $timing
+          &:nth-child(3)
+            transition: all 450ms 100ms $timing
+          &:nth-child(4)
+            transition: all 450ms 140ms $timing
+          &:nth-child(5)
+            transition: all 450ms 180ms $timing
+          &:nth-child(6)
+            transition: all 450ms 220ms $timing
+        &:hover
+          img
             border: 2px solid darken($mainColor, 15%)
             transform: rotate(-2deg)
+            opacity: 0.9
+          .transitionIcon
+            transform: translate(-300%,-30%)
             opacity: 1
+            &:nth-child(3)
+              transform: translate(-190%,-175%)
+            &:nth-child(4)
+              transform: translate(10%,-230%)
+            &:nth-child(5)
+              transform: translate(205%,-174%)
+            &:nth-child(6)
+              transform: translate(330%,-30%)
         p
           font-size: 11px
           line-height: 19px
@@ -709,7 +746,7 @@ footer
       span.telephone
         display: block
         margin: 44px 0 0
-        font-size:20px
+        font-size: 20px
         line-height: 26px
         font-weight: 900
         strong
