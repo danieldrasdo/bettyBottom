@@ -558,6 +558,25 @@ div.main #about-us .employees .employee {
   vertical-align: top;
   margin: 54px 3% 24px;
   position: relative;
+  /*.transitionIcon
+          display: none
+          font-size: 30px
+          line-height: 30px
+          color: darken($mainColor, 15%)
+          position: absolute
+          top: 30px
+          left: calc(50% - 15px)
+          z-index: 1
+          opacity: 0
+          transition: all 450ms $timing
+          &:nth-child(3)
+            transition: all 450ms 100ms $timing
+          &:nth-child(4)
+            transition: all 450ms 140ms $timing
+          &:nth-child(5)
+            transition: all 450ms 180ms $timing
+          &:nth-child(6)
+            transition: all 450ms 220ms $timing*/
 }
 
 div.main #about-us .employees .employee img {
@@ -576,38 +595,18 @@ div.main #about-us .employees .employee img {
   z-index: 2;
 }
 
-div.main #about-us .employees .employee .transitionIcon {
-  display: block;
-  font-size: 30px;
-  line-height: 30px;
-  color: #890016;
-  position: absolute;
-  top: 30px;
-  left: calc(50% - 15px);
-  z-index: 1;
-  opacity: 0;
-  -webkit-transition: all 450ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-  transition: all 450ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-}
-
-div.main #about-us .employees .employee .transitionIcon:nth-child(3) {
-  -webkit-transition: all 450ms 100ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-  transition: all 450ms 100ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-}
-
-div.main #about-us .employees .employee .transitionIcon:nth-child(4) {
-  -webkit-transition: all 450ms 140ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-  transition: all 450ms 140ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-}
-
-div.main #about-us .employees .employee .transitionIcon:nth-child(5) {
-  -webkit-transition: all 450ms 180ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-  transition: all 450ms 180ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-}
-
-div.main #about-us .employees .employee .transitionIcon:nth-child(6) {
-  -webkit-transition: all 450ms 220ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
-  transition: all 450ms 220ms cubic-bezier(0.74, -0.39, 0.27, 1.42);
+div.main #about-us .employees .employee:hover {
+  /*.transitionIcon
+            transform: translate(-300%,-30%)
+            opacity: 1
+            &:nth-child(3)
+              transform: translate(-190%,-175%)
+            &:nth-child(4)
+              transform: translate(10%,-230%)
+            &:nth-child(5)
+              transform: translate(205%,-174%)
+            &:nth-child(6)
+              transform: translate(330%,-30%)*/
 }
 
 div.main #about-us .employees .employee:hover img {
@@ -615,32 +614,6 @@ div.main #about-us .employees .employee:hover img {
   -webkit-transform: rotate(-2deg);
           transform: rotate(-2deg);
   opacity: 0.9;
-}
-
-div.main #about-us .employees .employee:hover .transitionIcon {
-  -webkit-transform: translate(-300%, -30%);
-          transform: translate(-300%, -30%);
-  opacity: 1;
-}
-
-div.main #about-us .employees .employee:hover .transitionIcon:nth-child(3) {
-  -webkit-transform: translate(-190%, -175%);
-          transform: translate(-190%, -175%);
-}
-
-div.main #about-us .employees .employee:hover .transitionIcon:nth-child(4) {
-  -webkit-transform: translate(10%, -230%);
-          transform: translate(10%, -230%);
-}
-
-div.main #about-us .employees .employee:hover .transitionIcon:nth-child(5) {
-  -webkit-transform: translate(205%, -174%);
-          transform: translate(205%, -174%);
-}
-
-div.main #about-us .employees .employee:hover .transitionIcon:nth-child(6) {
-  -webkit-transform: translate(330%, -30%);
-          transform: translate(330%, -30%);
 }
 
 div.main #about-us .employees .employee p {
@@ -782,6 +755,7 @@ div.main #manufacturers .manufacturer .images.desktop .primaryImage {
 }
 
 div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage) {
+  display: none;
   position: absolute;
   top: 0;
   right: 25%;
@@ -789,16 +763,23 @@ div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage) {
   height: 50%;
 }
 
+div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(2) {
+  display: block;
+}
+
 div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(3) {
+  display: block;
   right: 0;
 }
 
 div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(4) {
+  display: block;
   top: auto;
   bottom: 0;
 }
 
 div.main #manufacturers .manufacturer .images.desktop img:not(.primaryImage):nth-of-type(5) {
+  display: block;
   top: auto;
   bottom: 0;
   right: 0;

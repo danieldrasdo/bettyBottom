@@ -6,7 +6,6 @@ $backupFontFamily : Arial, Helvetica, sans-serif
 $mainColor : #d50023
 $errorColor : lighten($mainColor, 5%)
 $successColor : darken(adjust-hue($errorColor, 100deg), 20%)
-//$timing : cubic-bezier(.75,.27,.36,.82)
 $timing : cubic-bezier(.74, -0.39, .27, 1.42)
 
 
@@ -433,8 +432,8 @@ div.main
           transition: all 0.2s ease-in-out
           position: relative
           z-index: 2
-        .transitionIcon
-          display: block
+        /*.transitionIcon
+          display: none
           font-size: 30px
           line-height: 30px
           color: darken($mainColor, 15%)
@@ -451,13 +450,13 @@ div.main
           &:nth-child(5)
             transition: all 450ms 180ms $timing
           &:nth-child(6)
-            transition: all 450ms 220ms $timing
+            transition: all 450ms 220ms $timing*/
         &:hover
           img
             border: 2px solid darken($mainColor, 15%)
             transform: rotate(-2deg)
             opacity: 0.9
-          .transitionIcon
+          /*.transitionIcon
             transform: translate(-300%,-30%)
             opacity: 1
             &:nth-child(3)
@@ -467,7 +466,7 @@ div.main
             &:nth-child(5)
               transform: translate(205%,-174%)
             &:nth-child(6)
-              transform: translate(330%,-30%)
+              transform: translate(330%,-30%)*/
         p
           font-size: 11px
           line-height: 19px
@@ -571,17 +570,23 @@ div.main
             display: block
             float: left
           img:not(.primaryImage)
+            display: none
             position: absolute
             top: 0
             right: 25%
             width: 25%
             height: 50%
+            &:nth-of-type(2)
+              display: block
             &:nth-of-type(3)
+              display: block
               right: 0
             &:nth-of-type(4)
+              display: block
               top: auto
               bottom: 0
             &:nth-of-type(5)
+              display: block
               top: auto
               bottom: 0
               right: 0

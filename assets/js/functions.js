@@ -33,8 +33,8 @@ $(document).ready(function(){
         this.$cuteOptions = this.$manufacturerText.parent('.cuteOptions').find('.text');
         this.$dzhavael = this.$manufacturerText.parent('.dzhavael').find('.text');
         this.$eucalyptus = this.$manufacturerText.parent('.eucalyptus').find('.text');
-        this.$pureWhite = this.$manufacturerText.parent('.pureWhite').find('.text');
-        this.$recycledTraditions = this.$manufacturerText.parent('.recycledTraditions').find('.text');
+        //this.$pureWhite = this.$manufacturerText.parent('.pureWhite').find('.text');
+        //this.$recycledTraditions = this.$manufacturerText.parent('.recycledTraditions').find('.text');
         this.$flutterSqueak = this.$manufacturerText.parent('.flutterSqueak').find('.text');
         this.$cocoonHouse = this.$manufacturerText.parent('.cocoonHouse').find('.text');
         this.$peacockDesigns = this.$manufacturerText.parent('.peacockDesigns').find('.text');
@@ -234,7 +234,7 @@ $(document).ready(function(){
           });
         }
 
-        if ( this.wScrollBottom > this.$pureWhite.offset().top + ( this.$pureWhite.height() * 1.25) ) {
+        /*if ( this.wScrollBottom > this.$pureWhite.offset().top + ( this.$pureWhite.height() * 1.25) ) {
           this.$pureWhite.css({
             'opacity': '1'
           });
@@ -244,7 +244,7 @@ $(document).ready(function(){
           this.$recycledTraditions.css({
             'opacity': '1'
           });
-        }
+        }*/
 
         if ( this.wScrollBottom > this.$flutterSqueak.offset().top + ( this.$flutterSqueak.height() * 1.25) ) {
           this.$flutterSqueak.css({
