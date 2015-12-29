@@ -55,6 +55,7 @@ email-signature/
 node_modules/
 sandbox/
 assets/img/email/
+assets/js/analytics.js
 assets/img/betty-bottom-logo.psd
 submit.php
 .htaccess
