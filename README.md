@@ -8,4 +8,4 @@
 4. While still in your project directory run `gulp`.
 5. Open sass/js files within `_src` (these two output to the assets directory).
 
-\* *takes a bit to install dev dependencies*
+\* *takes a bit to install dev dependencies. Node.js and Gulp are required to be installed.*
