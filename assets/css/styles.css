@@ -48,7 +48,6 @@ body {
 body a {
   color: black;
   text-decoration: none;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -90,7 +89,6 @@ form textarea {
   box-sizing: border-box;
   border: 2px solid black;
   font: 400 16px/22px "Lato", Arial, Helvetica, sans-serif;
-  -webkit-transition: height 0.2s ease-in-out;
   transition: height 0.2s ease-in-out;
 }
 
@@ -110,7 +108,6 @@ form button {
   border: 2px solid black;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.1s ease-in;
 }
 
@@ -221,7 +218,6 @@ nav.siteNavFixed {
   opacity: 0;
   position: fixed;
   padding-top: 0;
-  -webkit-transition: all 200ms;
   transition: all 200ms;
   background: none;
   background-color: white;
@@ -258,7 +254,6 @@ div.main {
 
 div.main a {
   color: #d50023;
-  -webkit-transition: border 100ms 150ms;
   transition: border 100ms 150ms;
 }
 
@@ -367,7 +362,8 @@ div.main #about-us h2 .logo {
   background: url("../img/betty-bottom-logo.png") no-repeat center center;
   background-size: 100%;
   -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 div.main #about-us h2 i {
@@ -380,7 +376,8 @@ div.main #about-us h2 i {
   padding-left: 14px;
   font-family: 'Times', Times New Roman, serif;
   -webkit-transform: translateY(14px) rotate(5deg);
-          transform: translateY(14px) rotate(5deg);
+  -ms-transform: translateY(14px) rotate(5deg);
+  transform: translateY(14px) rotate(5deg);
 }
 
 div.main #about-us .timeline {
@@ -433,7 +430,8 @@ div.main #about-us .timeline .events .event span {
   width: 9%;
   height: 1px;
   -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 
 div.main #about-us .timeline .events .event:first-of-type {
@@ -477,7 +475,8 @@ div.main #about-us .timeline.future #verticalLine {
 div.main #about-us .timeline.future .timelineDate:last-child {
   background-color: #999999;
   -webkit-transform: translateY(44px);
-          transform: translateY(44px);
+  -ms-transform: translateY(44px);
+  transform: translateY(44px);
 }
 
 div.main #about-us .timeline.future .events .event {
@@ -516,7 +515,8 @@ div.main #about-us .coloredSkirts blockquote .quote {
   display: inline-block;
   padding: 0 4px;
   -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
 }
 
 div.main #about-us .coloredSkirts blockquote p {
@@ -589,7 +589,6 @@ div.main #about-us .employees .employee img {
   margin: 0 0 24px;
   opacity: 1;
   background-color: white;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   position: relative;
   z-index: 2;
@@ -612,7 +611,8 @@ div.main #about-us .employees .employee:hover {
 div.main #about-us .employees .employee:hover img {
   border: 2px solid #890016;
   -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
   opacity: 0.9;
 }
 
@@ -623,7 +623,8 @@ div.main #about-us .employees .employee p {
 
 div.main #about-us .employees .employee p i {
   -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
   color: #890016;
   padding: 0 2px;
   font-size: 14px;
@@ -705,7 +706,6 @@ div.main #manufacturers .manufacturer .text {
   z-index: 2;
   box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.1);
   opacity: 1;
-  -webkit-transition: opacity 800ms ease-in-out;
   transition: opacity 800ms ease-in-out;
 }
 
@@ -723,7 +723,8 @@ div.main #manufacturers .manufacturer .text h3 .usa {
   background-color: #d50023;
   color: white;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
   display: inline-block;
   padding: 2px 4px 1px;
 }
@@ -831,7 +832,6 @@ div.main #customers .customerBgImageCycle {
   right: 0;
   width: 50%;
   height: 100%;
-  -webkit-transition: -webkit-filter 0.5s ease-in-out;
   transition: -webkit-filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out;
   transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
@@ -1293,7 +1293,6 @@ footer #bottom p i.fa-heart {
     color: black;
     box-shadow: none;
     opacity: 1 !important;
-    -webkit-transition: none;
     transition: none;
   }
   div.main section#manufacturers .manufacturer .images.desktop {
